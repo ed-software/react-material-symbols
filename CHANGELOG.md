@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/ed-software/react-material-symbols/compare/v1.0.1...v1.0.2) (2022-11-25)
+
+
+### Bug Fixes
+
+* :scroll: documentation updates ([bd1482e](https://github.com/ed-software/react-material-symbols/commit/bd1482eefefb318629becc583a118dfa7871ac12))
+
 ## [1.0.1](https://github.com/ed-software/react-material-symbols/compare/v1.0.0...v1.0.1) (2022-11-25)
 
 
