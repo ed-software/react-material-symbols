@@ -3,12 +3,20 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "contributors": [
+    {
+      "name": "Ed Jones"
+    }
+  ],
+  "engines": {
+    "node": "18.12.1"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "storybook": "cross-env NODE_OPTIONS='--openssl-legacy-provider' start-storybook -p 6006",
+    "build-storybook": "cross-env NODE_OPTIONS='--openssl-legacy-provider' build-storybook"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -27,6 +35,8 @@
     "@types/react-dom": "^18.0.8",
     "@vitejs/plugin-react": "^2.2.0",
     "babel-loader": "^8.3.0",
+    "cross-env": "^7.0.3",
+    "prettier": "^2.8.0",
     "typescript": "^4.6.4",
     "vite": "^3.2.3"
   }
