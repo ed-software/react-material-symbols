@@ -1,11 +1,5 @@
-import { ReactElement, forwardRef, ForwardedRef, ElementType, CSSProperties } from 'react';
-import {
-	MaterialSymbolGrade,
-	MaterialSymbolOpticalSize,
-	MaterialSymbolVariant,
-	MaterialSymbolWeight,
-	SymbolCodepoints,
-} from './types';
+import { ReactElement, ElementType, CSSProperties } from 'react';
+import { MaterialSymbolVariant, MaterialSymbolWeight, SymbolCodepoints } from './types';
 import { combineClasses, PolymorphicComponentProps } from './utils';
 import './style.css';
 
@@ -23,11 +17,11 @@ export type MaterialSymbolProps = {
 	/** Weight defines the symbol’s stroke weight, with a range of weights between thin (100) and heavy (900). Weight can also affect the overall size of the symbol. */
 	weight?: MaterialSymbolWeight;
 	/** Weight and grade affect a symbol’s thickness. Adjustments to grade are more granular than adjustments to weight and have a small impact on the size of the symbol. */
-	grade?: MaterialSymbolGrade;
+	grade?: number;
 	/** Default `'inherit'`.
 	 *
 	 * Size defines the icon width and height in pixels. For the image to look the same at different sizes, the stroke weight (thickness) changes as the icon size scales. */
-	size?: MaterialSymbolOpticalSize;
+	size?: number;
 	/** Default `'inherit'`
 	 *
 	 * Color accepts key values (`'red'`, `'blue'`, `'indigo'`, etc.), `<hex-color>`, `<rgb()>`, `<hsl()>` and `<hwb()>` values.  */

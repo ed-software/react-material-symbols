@@ -1,12 +1,7 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import MaterialSymbol from '../index';
-import {
-	MaterialSymbolGradeArray,
-	MaterialSymbolOpticalSizeArray,
-	MaterialSymbolVariantArray,
-	SymbolCodepointsArray,
-} from '../types';
+import { MaterialSymbolVariantArray, SymbolCodepointsArray } from '../types';
 
 export default {
 	title: 'MaterialSymbol',
@@ -15,8 +10,8 @@ export default {
 		icon: { control: 'select', options: SymbolCodepointsArray },
 		variant: { control: 'select', options: MaterialSymbolVariantArray },
 		weight: { control: { type: 'range', min: 100, max: 900, step: 100 } },
-		grade: { control: 'select', options: MaterialSymbolGradeArray },
-		size: { control: 'select', options: MaterialSymbolOpticalSizeArray },
+		grade: { control: { type: 'range', min: -25, max: 200, step: 5 } },
+		size: { control: { type: 'range', min: 0, max: 200, step: 10 } },
 		color: { control: 'color' },
 		fill: { control: 'boolean' },
 	},

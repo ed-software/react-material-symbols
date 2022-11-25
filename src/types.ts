@@ -2380,9 +2380,3 @@ export type MaterialSymbolVariant = typeof MaterialSymbolVariantArray[number];
 
 export const MaterialSymbolWeightArray = [100, 200, 300, 400, 500, 600, 700, 800, 900] as const;
 export type MaterialSymbolWeight = typeof MaterialSymbolWeightArray[number];
-
-export const MaterialSymbolGradeArray = [-25, 0, 200] as const;
-export type MaterialSymbolGrade = typeof MaterialSymbolGradeArray[number];
-
-export const MaterialSymbolOpticalSizeArray = [20, 24, 40, 48] as const;
-export type MaterialSymbolOpticalSize = typeof MaterialSymbolOpticalSizeArray[number];
