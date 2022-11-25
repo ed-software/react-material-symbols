@@ -10,15 +10,30 @@ import { combineClasses, PolymorphicComponentProps } from './utils';
 import './MaterialIcon.css';
 
 export type MaterialIconProps = {
+	/** Required. The name of the icon to render. */
 	icon: SymbolCodepoints;
+	/** Default `'outlined'`.
+	 *
+	 * Three main styles material icons can come in. */
 	variant?: MaterialIconVariant;
+	/** Default `false`.
+	 *
+	 * Fill gives you the ability to modify the default icon style. A single icon can render both unfilled and filled states. */
 	fill?: boolean;
+	/** Weight defines the symbol’s stroke weight, with a range of weights between thin (100) and heavy (900). Weight can also affect the overall size of the symbol. */
 	weight?: MaterialIconWeight;
+	/** Weight and grade affect a symbol’s thickness. Adjustments to grade are more granular than adjustments to weight and have a small impact on the size of the symbol. */
+	grade?: MaterialIconGrade;
+	/** Default `'inherit'`.
+	 *
+	 * Size defines the icon width and height in pixels. For the image to look the same at different sizes, the stroke weight (thickness) changes as the icon size scales. */
+	size?: MaterialIconOpticalSize;
+	/** Default `'inherit'`
+	 *
+	 * Color accepts key values (`'red'`, `'blue'`, `'indigo'`, etc.), `<hex-color>`, `<rgb()>`, `<hsl()>` and `<hwb()>` values.  */
+	color?: CSSProperties['color'];
 	className?: string;
 	style?: CSSProperties;
-	grade?: MaterialIconGrade;
-	size?: MaterialIconOpticalSize;
-	color?: CSSProperties['color'];
 };
 
 export const MaterialIcon = forwardRef(function IconInner<C extends React.ElementType>(
