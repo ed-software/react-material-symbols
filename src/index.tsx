@@ -36,23 +36,25 @@ export type MaterialSymbolProps = {
 	style?: CSSProperties;
 };
 
-const MaterialSymbol = forwardRef(function IconInner<C extends React.ElementType>(
-	{
-		variant = 'outlined',
-		icon,
-		className,
-		onClick,
-		as,
-		weight,
-		fill = false,
-		grade,
-		size,
-		style: propStyle,
-		color,
-		...props
-	}: PolymorphicComponentProps<C, MaterialSymbolProps>,
-	ref: ForwardedRef<C>
-): ReactElement {
+export type PolymorphicMaterialSymbolProps<C extends React.ElementType> = PolymorphicComponentProps<
+	C,
+	MaterialSymbolProps
+>;
+
+const MaterialSymbol = <C extends ElementType>({
+	variant = 'outlined',
+	icon,
+	className,
+	onClick,
+	as,
+	weight,
+	fill = false,
+	grade,
+	size,
+	style: propStyle,
+	color,
+	...props
+}: PolymorphicMaterialSymbolProps<C>): ReactElement => {
 	const classes = [className, 'material-symbols'];
 	const Component = onClick !== undefined ? 'button' : (as as ElementType) ?? 'span';
 	const style = { color, ...propStyle };
@@ -88,16 +90,10 @@ const MaterialSymbol = forwardRef(function IconInner<C extends React.ElementType
 	}
 
 	return (
-		<Component
-			{...props}
-			style={style}
-			onClick={onClick}
-			className={combineClasses(...classes)}
-			ref={ref}
-		>
+		<Component {...props} style={style} onClick={onClick} className={combineClasses(...classes)}>
 			{icon}
 		</Component>
 	);
-});
+};
 
 export default MaterialSymbol;

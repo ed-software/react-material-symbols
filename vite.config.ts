@@ -13,7 +13,7 @@ export default defineConfig({
 	],
 	build: {
 		lib: {
-			entry: resolve(__dirname, 'src/index.ts'),
+			entry: resolve(__dirname, 'src/index.tsx'),
 			name: 'React Material Symbols',
 			fileName: 'index',
 		},

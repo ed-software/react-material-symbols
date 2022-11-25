@@ -41,7 +41,7 @@
   },
   "description": "A minimalist package for adding [Material Symbols](https://fonts.google.com/icons?icon.set=Material+Symbols) to any React project.",
   "main": "dist/index.js",
-  "types": "dist/index.d.js",
+  "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ed-software/react-material-symbols.git"
@@ -60,5 +60,6 @@
   "bugs": {
     "url": "https://github.com/ed-software/react-material-symbols/issues"
   },
-  "homepage": "https://github.com/ed-software/react-material-symbols#readme"
+  "homepage": "https://github.com/ed-software/react-material-symbols#readme",
+  "files": ["dist/style.css"]
 }

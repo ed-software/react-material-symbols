@@ -1,12 +1,12 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import MaterialSymbol from './MaterialSymbol';
+import MaterialSymbol from '../index';
 import {
 	MaterialSymbolGradeArray,
 	MaterialSymbolOpticalSizeArray,
 	MaterialSymbolVariantArray,
 	SymbolCodepointsArray,
-} from './types';
+} from '../types';
 
 export default {
 	title: 'MaterialSymbol',

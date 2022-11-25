@@ -43,6 +43,7 @@ import Icon from 'react-material-symbols'
 ## Examples
 
 ```TSX
+import 'react-material-symbols/dist/style.css' // Include in the root file of your app
 import Icon from 'react-material-symbols'
 
 export default function App() {
