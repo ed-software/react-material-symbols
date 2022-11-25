@@ -20,7 +20,7 @@ Install with npm
 Import
 
 ```typescript
-import Icon from 'material-icons'
+import { MaterialIcons } from 'material-icons'
 ```
 
 
