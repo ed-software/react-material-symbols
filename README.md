@@ -39,3 +39,16 @@ import Icon from 'material-icons'
 | `size` | `20 \| 24 \| 40 \| 48 \| undefined` | **Default `inherit`**. Size defines the icon width and height in pixels. For the image to look the same at different sizes, the stroke weight (thickness) changes as the icon size scales. |
 | `color` | `string \| undefined` | **Default `inherit`**. Color accepts key values (`'red'`, `'blue'`, `'indigo'`, etc.), `<hex-color>`, `<rgb()>`, `<hsl()>` and `<hwb()>` values. |
 | `as` | `React.ElementType \| undefined` | **Default `'span'`**. Set the HTML Element for the icon.
+
+## Examples
+
+```TSX
+import { MaterialIcons } from 'material-icons'
+
+export default function App() {
+  return (
+    <Icon icon="folder" size={24} fill grade={-25} color='red' variant='rounded' />
+  )
+}
+
+```
