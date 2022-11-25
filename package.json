@@ -1,5 +1,5 @@
 {
-  "name": "material-icons",
+  "name": "react-material-symbols",
   "private": false,
   "version": "1.0.0",
   "type": "module",
@@ -39,24 +39,26 @@
     "vite": "^3.2.3",
     "vite-plugin-dts": "^1.7.1"
   },
-  "description": "A minimalist package for adding [Material Icons](https://fonts.google.com/icons) to any React project.",
+  "description": "A minimalist package for adding [Material Symbols](https://fonts.google.com/icons?icon.set=Material+Symbols) to any React project.",
   "main": "dist/index.js",
   "types": "dist/index.d.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ed-jones/material-icons.git"
+    "url": "git+https://github.com/ed-software/react-material-symbols.git"
   },
   "keywords": [
+    "Icons",
     "React",
     "TypeScript",
-    "Material",
-    "Icons",
-    "Icons"
+    "Material Icons",
+    "Material Symbols",
+    "Symbols",
+    "Material"
   ],
   "author": "Ed Jones",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/ed-jones/material-icons/issues"
+    "url": "https://github.com/ed-software/react-material-symbols/issues"
   },
-  "homepage": "https://github.com/ed-jones/material-icons#readme"
+  "homepage": "https://github.com/ed-software/react-material-symbols#readme"
 }

@@ -1,33 +1,33 @@
 import { ReactElement, forwardRef, ForwardedRef, ElementType, CSSProperties } from 'react';
 import {
-	MaterialIconGrade,
-	MaterialIconOpticalSize,
-	MaterialIconVariant,
-	MaterialIconWeight,
+	MaterialSymbolGrade,
+	MaterialSymbolOpticalSize,
+	MaterialSymbolVariant,
+	MaterialSymbolWeight,
 	SymbolCodepoints,
 } from './types';
 import { combineClasses, PolymorphicComponentProps } from './utils';
-import './MaterialIcon.css';
+import './style.css';
 
-export type MaterialIconProps = {
+export type MaterialSymbolProps = {
 	/** Required. The name of the icon to render. */
 	icon: SymbolCodepoints;
 	/** Default `'outlined'`.
 	 *
 	 * Three main styles material icons can come in. */
-	variant?: MaterialIconVariant;
+	variant?: MaterialSymbolVariant;
 	/** Default `false`.
 	 *
 	 * Fill gives you the ability to modify the default icon style. A single icon can render both unfilled and filled states. */
 	fill?: boolean;
 	/** Weight defines the symbol’s stroke weight, with a range of weights between thin (100) and heavy (900). Weight can also affect the overall size of the symbol. */
-	weight?: MaterialIconWeight;
+	weight?: MaterialSymbolWeight;
 	/** Weight and grade affect a symbol’s thickness. Adjustments to grade are more granular than adjustments to weight and have a small impact on the size of the symbol. */
-	grade?: MaterialIconGrade;
+	grade?: MaterialSymbolGrade;
 	/** Default `'inherit'`.
 	 *
 	 * Size defines the icon width and height in pixels. For the image to look the same at different sizes, the stroke weight (thickness) changes as the icon size scales. */
-	size?: MaterialIconOpticalSize;
+	size?: MaterialSymbolOpticalSize;
 	/** Default `'inherit'`
 	 *
 	 * Color accepts key values (`'red'`, `'blue'`, `'indigo'`, etc.), `<hex-color>`, `<rgb()>`, `<hsl()>` and `<hwb()>` values.  */
@@ -36,7 +36,7 @@ export type MaterialIconProps = {
 	style?: CSSProperties;
 };
 
-export const MaterialIcon = forwardRef(function IconInner<C extends React.ElementType>(
+const MaterialSymbol = forwardRef(function IconInner<C extends React.ElementType>(
 	{
 		variant = 'outlined',
 		icon,
@@ -50,7 +50,7 @@ export const MaterialIcon = forwardRef(function IconInner<C extends React.Elemen
 		style: propStyle,
 		color,
 		...props
-	}: PolymorphicComponentProps<C, MaterialIconProps>,
+	}: PolymorphicComponentProps<C, MaterialSymbolProps>,
 	ref: ForwardedRef<C>
 ): ReactElement {
 	const classes = [className, 'material-symbols'];
@@ -99,3 +99,5 @@ export const MaterialIcon = forwardRef(function IconInner<C extends React.Elemen
 		</Component>
 	);
 });
+
+export default MaterialSymbol;

@@ -1,6 +1,6 @@
-# Material Icons
+# React Material Symbols
 
-A minimalist package for adding [Material Icons](https://fonts.google.com/icons) to any React project.
+A minimalist package for adding [Material Symbols](https://fonts.google.com/icons?icon.set=Material+Symbols) to any React project.
 
 
 
@@ -14,19 +14,19 @@ A minimalist package for adding [Material Icons](https://fonts.google.com/icons)
 Install with npm
 
 ```bash
-  npm i material-icons
+  npm i react-material-symbols
 ```
 
 Import
 
 ```typescript
-import { MaterialIcons } from 'material-icons'
+import Icon from 'react-material-symbols'
 ```
 
 
 ## Props
 
-#### `type MaterialIconProps`
+#### `type MaterialSymbolProps`
 
 
 | Prop | Type     | Description                |
@@ -43,7 +43,7 @@ import { MaterialIcons } from 'material-icons'
 ## Examples
 
 ```TSX
-import { MaterialIcons } from 'material-icons'
+import Icon from 'react-material-symbols'
 
 export default function App() {
   return (

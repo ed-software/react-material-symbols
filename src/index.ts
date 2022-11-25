@@ -1,1 +1,1 @@
-export * from "./MaterialIcon";
+export * from './MaterialSymbol';

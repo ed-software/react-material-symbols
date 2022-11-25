@@ -2375,14 +2375,14 @@ export const SymbolCodepointsArray = [
 ] as const;
 export type SymbolCodepoints = typeof SymbolCodepointsArray[number];
 
-export const MaterialIconVariantArray = ['outlined', 'rounded', 'sharp'] as const;
-export type MaterialIconVariant = typeof MaterialIconVariantArray[number];
+export const MaterialSymbolVariantArray = ['outlined', 'rounded', 'sharp'] as const;
+export type MaterialSymbolVariant = typeof MaterialSymbolVariantArray[number];
 
-export const MaterialIconWeightArray = [100, 200, 300, 400, 500, 600, 700, 800, 900] as const;
-export type MaterialIconWeight = typeof MaterialIconWeightArray[number];
+export const MaterialSymbolWeightArray = [100, 200, 300, 400, 500, 600, 700, 800, 900] as const;
+export type MaterialSymbolWeight = typeof MaterialSymbolWeightArray[number];
 
-export const MaterialIconGradeArray = [-25, 0, 200] as const;
-export type MaterialIconGrade = typeof MaterialIconGradeArray[number];
+export const MaterialSymbolGradeArray = [-25, 0, 200] as const;
+export type MaterialSymbolGrade = typeof MaterialSymbolGradeArray[number];
 
-export const MaterialIconOpticalSizeArray = [20, 24, 40, 48] as const;
-export type MaterialIconOpticalSize = typeof MaterialIconOpticalSizeArray[number];
+export const MaterialSymbolOpticalSizeArray = [20, 24, 40, 48] as const;
+export type MaterialSymbolOpticalSize = typeof MaterialSymbolOpticalSizeArray[number];
