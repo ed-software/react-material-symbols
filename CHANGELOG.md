@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/ed-software/react-material-symbols/compare/v1.0.3...v1.0.4) (2022-11-27)
+
+
+### Bug Fixes
+
+* :bug: missing type declarations ([177375e](https://github.com/ed-software/react-material-symbols/commit/177375ec266648cb166bdb4f62a34cf6d94a62e0))
+
 ## [1.0.3](https://github.com/ed-software/react-material-symbols/compare/v1.0.2...v1.0.3) (2022-11-25)
 
 
