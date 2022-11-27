@@ -30,7 +30,12 @@ Example.args = {
 const AllTemplate: ComponentStory<typeof MaterialSymbol> = (args) => (
 	<>
 		{SymbolCodepointsArray.map((symbolCodepoint) => (
-			<MaterialSymbol {...args} icon={symbolCodepoint} title={symbolCodepoint} />
+			<MaterialSymbol
+				{...args}
+				icon={symbolCodepoint}
+				key={symbolCodepoint}
+				title={symbolCodepoint}
+			/>
 		))}
 	</>
 );
