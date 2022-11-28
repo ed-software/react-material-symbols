@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.2](https://github.com/ed-software/react-material-symbols/compare/v2.0.1...v2.0.2) (2022-11-28)
+
+
+### Bug Fixes
+
+* :bug: missing styles ([8b5ed00](https://github.com/ed-software/react-material-symbols/commit/8b5ed009255fd8b79002a6da98f822a976398fbf))
+
 ## [2.0.1](https://github.com/ed-software/react-material-symbols/compare/v2.0.0...v2.0.1) (2022-11-28)
 
 
