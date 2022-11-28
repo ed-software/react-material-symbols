@@ -1,15 +1,10 @@
 import { ReactElement, ElementType, CSSProperties } from 'react';
-import { MaterialSymbolVariant, MaterialSymbolWeight, SymbolCodepoints } from './types';
+import { MaterialSymbolWeight, SymbolCodepoints } from './types';
 import { combineClasses, PolymorphicComponentProps } from './utils';
-import './style.css';
 
 export type MaterialSymbolProps = {
 	/** Required. The name of the icon to render. */
 	icon: SymbolCodepoints;
-	/** Default `'outlined'`.
-	 *
-	 * Three main styles material icons can come in. */
-	variant?: MaterialSymbolVariant;
 	/** Default `false`.
 	 *
 	 * Fill gives you the ability to modify the default icon style. A single icon can render both unfilled and filled states. */
@@ -36,7 +31,6 @@ export type PolymorphicMaterialSymbolProps<C extends React.ElementType> = Polymo
 >;
 
 const MaterialSymbol = <C extends ElementType>({
-	variant = 'outlined',
 	icon,
 	className,
 	onClick,
@@ -52,17 +46,6 @@ const MaterialSymbol = <C extends ElementType>({
 	const classes = [className, 'material-symbols'];
 	const Component = onClick !== undefined ? 'button' : (as as ElementType) ?? 'span';
 	const style = { color, ...propStyle };
-
-	switch (variant) {
-		case 'outlined':
-			classes.push('material-symbols-outlined');
-			break;
-		case 'rounded':
-			classes.push('material-symbols-rounded');
-			break;
-		case 'sharp':
-			classes.push('material-symbols-sharp');
-	}
 
 	if (fill)
 		style.fontVariationSettings = [style.fontVariationSettings, '"FILL" 1']

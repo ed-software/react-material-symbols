@@ -1,14 +1,13 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import MaterialSymbol from '../index';
-import { MaterialSymbolVariantArray, SymbolCodepointsArray } from '../types';
+import MaterialSymbol from '../icon';
+import { SymbolCodepointsArray } from '../types';
 
 export default {
 	title: 'MaterialSymbol',
 	component: MaterialSymbol,
 	argTypes: {
 		icon: { control: 'select', options: SymbolCodepointsArray },
-		variant: { control: 'select', options: MaterialSymbolVariantArray },
 		weight: { control: { type: 'range', min: 100, max: 900, step: 100 } },
 		grade: { control: { type: 'range', min: -25, max: 200, step: 5 } },
 		size: { control: { type: 'range', min: 0, max: 200, step: 10 } },
@@ -22,7 +21,6 @@ const Template: ComponentStory<typeof MaterialSymbol> = (args) => <MaterialSymbo
 export const Example = Template.bind({});
 Example.args = {
 	icon: 'folder',
-	variant: 'outlined',
 	fill: false,
 	size: 48,
 };

@@ -2375,8 +2375,5 @@ export const SymbolCodepointsArray = [
 ] as const;
 export type SymbolCodepoints = typeof SymbolCodepointsArray[number];
 
-export const MaterialSymbolVariantArray = ['outlined', 'rounded', 'sharp'] as const;
-export type MaterialSymbolVariant = typeof MaterialSymbolVariantArray[number];
-
 export const MaterialSymbolWeightArray = [100, 200, 300, 400, 500, 600, 700, 800, 900] as const;
 export type MaterialSymbolWeight = typeof MaterialSymbolWeightArray[number];
