@@ -3,7 +3,7 @@
 @font-face {
 	font-family: 'Material Symbols Sharp';
 	font-style: normal;
-	src: url(./font/MaterialSymbolsSharp.woff2) format('woff2');
+	src: url(../font/MaterialSymbolsSharp.woff2) format('woff2');
 }
 
 .material-symbols {

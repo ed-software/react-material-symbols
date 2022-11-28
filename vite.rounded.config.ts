@@ -14,10 +14,12 @@ export default defineConfig({
 		cssInjectedByJsPlugin(),
 	],
 	build: {
+		emptyOutDir: false,
+		cssCodeSplit: true,
 		lib: {
-			entry: resolve(__dirname, 'src/index.ts'),
+			entry: resolve(__dirname, 'src/rounded.tsx'),
 			name: 'React Material Symbols',
-			fileName: 'index',
+			fileName: 'rounded',
 		},
 	},
 });
