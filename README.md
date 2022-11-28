@@ -17,11 +17,10 @@ Install with npm
 Import
 
 ```typescript
-// Include in the root file of your app.
 // Variant can be outlined, rounded or sharp.
-import 'react-material-symbols/dist/[variant].css';
-
-import Icon from 'react-material-symbols';
+import Icon from 'react-material-symbols/[variant]';
+// If you need to access the type of the component props.
+import { type MaterialSymbolProps } from 'react-material-symbols';
 ```
 
 ## Props
@@ -41,12 +40,11 @@ import Icon from 'react-material-symbols';
 ## Examples
 
 ```TSX
-import 'react-material-symbols/dist/style.css' // Include in the root file of your app
-import Icon from 'react-material-symbols'
+import Icon from 'react-material-symbols/rounded';
 
 export default function App() {
   return (
-    <Icon icon="folder" size={24} fill grade={-25} color='red' variant='rounded' />
+    <Icon icon="folder" size={24} fill grade={-25} color='red' />
   )
 }
 
