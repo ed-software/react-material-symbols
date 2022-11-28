@@ -1,5 +1,21 @@
 # Changelog
 
+## [2.0.0](https://github.com/ed-software/react-material-symbols/compare/v1.0.4...v2.0.0) (2022-11-28)
+
+
+### ⚠ BREAKING CHANGES
+
+* sparkles: update import API
+
+### Features
+
+* sparkles: update import API ([9281562](https://github.com/ed-software/react-material-symbols/commit/9281562b8b314d9d23037604497f292345c1162a))
+
+
+### Bug Fixes
+
+* :bug: remove unneeded dependencies ([825d9e6](https://github.com/ed-software/react-material-symbols/commit/825d9e6d3cf658c43df8a9921d40c5b218d4c292))
+
 ## [1.0.4](https://github.com/ed-software/react-material-symbols/compare/v1.0.3...v1.0.4) (2022-11-27)
 
 
