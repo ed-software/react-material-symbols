@@ -9,7 +9,7 @@
     }
   ],
   "engines": {
-    "node": ">=18.12.1"
+    "node": ">=14.0.0"
   },
   "scripts": {
     "dev": "vite",
@@ -33,7 +33,7 @@
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
     "@vitejs/plugin-react": "^3.1.0",
-    "babel-loader": "^8.3.0",
+    "babel-loader": "^9.1.2",
     "chromatic": "^6.17.1",
     "cross-env": "^7.0.3",
     "prettier": "^2.8.0",
