@@ -1,5 +1,21 @@
 # Changelog
 
+## [3.0.0](https://github.com/ed-software/react-material-symbols/compare/v2.0.4...v3.0.0) (2023-03-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* :sparkles: update icons
+
+### Features
+
+* :sparkles: update icons ([1527e62](https://github.com/ed-software/react-material-symbols/commit/1527e625e7a52038d7060144e9bbcb23604f04f7))
+
+
+### Bug Fixes
+
+* :bug: support node versions past 14 ([a5fa1e5](https://github.com/ed-software/react-material-symbols/commit/a5fa1e579d273f8bc925e4f1ced992897c3a527d))
+
 ## [2.0.4](https://github.com/ed-software/react-material-symbols/compare/v2.0.3...v2.0.4) (2023-03-10)
 
 
