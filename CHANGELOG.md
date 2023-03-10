@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.3](https://github.com/ed-software/react-material-symbols/compare/v2.0.2...v2.0.3) (2023-03-10)
+
+
+### Bug Fixes
+
+* widen package version range to avoid "Unsupported engine" warning ([47011ad](https://github.com/ed-software/react-material-symbols/commit/47011ade06e22ffd20dd258ba8731be910e7ddeb))
+
 ## [2.0.2](https://github.com/ed-software/react-material-symbols/compare/v2.0.1...v2.0.2) (2022-11-28)
 
 
