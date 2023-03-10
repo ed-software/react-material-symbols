@@ -1,10 +1,10 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import MaterialSymbol from '../icon';
+import MaterialSymbol from '../outlined';
 import { SymbolCodepointsArray } from '../types';
 
 export default {
-	title: 'MaterialSymbol',
+	title: 'Outlined',
 	component: MaterialSymbol,
 	argTypes: {
 		icon: { control: 'select', options: SymbolCodepointsArray },
