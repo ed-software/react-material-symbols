@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.4](https://github.com/ed-software/react-material-symbols/compare/v2.0.3...v2.0.4) (2023-03-10)
+
+
+### Bug Fixes
+
+* :arrow_up: update dependencies ([1b3dd79](https://github.com/ed-software/react-material-symbols/commit/1b3dd7978bf5e30a0e45c8411b24716fbb054a7a))
+
 ## [2.0.3](https://github.com/ed-software/react-material-symbols/compare/v2.0.2...v2.0.3) (2023-03-10)
 
 
