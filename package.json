@@ -17,29 +17,26 @@
     "build-storybook": "cross-env NODE_OPTIONS='--openssl-legacy-provider' build-storybook"
   },
   "dependencies": {
-    "@senojs/rollup-plugin-style-inject": "^0.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.2",
-    "@storybook/addon-actions": "^6.5.13",
+    "@senojs/rollup-plugin-style-inject": "^0.2.0",
     "@storybook/addon-essentials": "^6.5.13",
-    "@storybook/addon-interactions": "^6.5.13",
-    "@storybook/addon-links": "^6.5.13",
-    "@storybook/builder-vite": "^0.2.5",
+    "@storybook/builder-vite": "^0.4.2",
     "@storybook/react": "^6.5.13",
-    "@storybook/testing-library": "0.0.13",
+    "@types/css-modules": "^1.0.2",
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
-    "@vitejs/plugin-react": "^2.2.0",
+    "@vitejs/plugin-react": "^3.1.0",
     "babel-loader": "^8.3.0",
     "cross-env": "^7.0.3",
     "prettier": "^2.8.0",
     "typescript": "^4.6.4",
-    "vite": "^3.2.3",
-    "vite-plugin-css-injected-by-js": "^2.1.1",
-    "vite-plugin-dts": "^1.7.1"
+    "vite": "^4.1.4",
+    "vite-plugin-css-injected-by-js": "^3.0.1",
+    "vite-plugin-dts": "^2.1.0"
   },
   "description": "A minimalist package for adding Material Symbols to any React project.",
   "repository": {
