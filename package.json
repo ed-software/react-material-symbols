@@ -17,7 +17,8 @@
     "preview": "vite preview",
     "storybook": "cross-env NODE_OPTIONS='--openssl-legacy-provider' start-storybook -p 6006",
     "build-storybook": "cross-env NODE_OPTIONS='--openssl-legacy-provider' build-storybook",
-    "chromatic": "chromatic --exit-zero-on-changes"
+    "chromatic": "chromatic --exit-zero-on-changes",
+    "prettier:check": "prettier --check ."
   },
   "dependencies": {
     "react": "^18.2.0",
