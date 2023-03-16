@@ -2794,7 +2794,7 @@ export const SymbolCodepointsArray = [
 	'zoom_out',
 	'zoom_out_map',
 ] as const;
-export type SymbolCodepoints = typeof SymbolCodepointsArray[number];
+export type SymbolCodepoints = (typeof SymbolCodepointsArray)[number];
 
 export const MaterialSymbolWeightArray = [100, 200, 300, 400, 500, 600, 700, 800, 900] as const;
-export type MaterialSymbolWeight = typeof MaterialSymbolWeightArray[number];
+export type MaterialSymbolWeight = (typeof MaterialSymbolWeightArray)[number];

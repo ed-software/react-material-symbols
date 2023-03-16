@@ -1,9 +1,14 @@
 {
-  "compilerOptions": {
-    "composite": true,
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "allowSyntheticDefaultImports": true
-  },
-  "include": ["vite.config.ts", "vite.outlined.config.ts", "vite.rounded.config.ts", "vite.sharp.config.ts"]
+	"compilerOptions": {
+		"composite": true,
+		"module": "ESNext",
+		"moduleResolution": "Node",
+		"allowSyntheticDefaultImports": true
+	},
+	"include": [
+		"vite.config.ts",
+		"vite.outlined.config.ts",
+		"vite.rounded.config.ts",
+		"vite.sharp.config.ts"
+	]
 }
