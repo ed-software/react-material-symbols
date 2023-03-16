@@ -19,7 +19,9 @@
 		"build-storybook": "cross-env NODE_OPTIONS='--openssl-legacy-provider' build-storybook",
 		"chromatic": "chromatic --exit-zero-on-changes",
 		"prettier:check": "prettier --check .",
-		"prettier:write": "prettier --write ."
+		"prettier:write": "prettier --write .",
+		"eslint": "eslint .",
+		"eslint:fix": "eslint --fix ."
 	},
 	"dependencies": {
 		"react": "^18.2.0",
@@ -34,12 +36,16 @@
 		"@types/css-modules": "^1.0.2",
 		"@types/react": "^18.0.24",
 		"@types/react-dom": "^18.0.8",
+		"@typescript-eslint/eslint-plugin": "^5.55.0",
+		"@typescript-eslint/parser": "^5.55.0",
 		"@vitejs/plugin-react": "^3.1.0",
 		"babel-loader": "^9.1.2",
 		"chromatic": "^6.17.1",
 		"cross-env": "^7.0.3",
+		"eslint": "^8.36.0",
+		"eslint-plugin-react": "^7.32.2",
 		"prettier": "^2.8.0",
-		"typescript": "^4.6.4",
+		"typescript": "^4.9.5",
 		"vite": "^4.1.4",
 		"vite-plugin-css-injected-by-js": "^3.0.1",
 		"vite-plugin-dts": "^2.1.0"

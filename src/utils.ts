@@ -1,4 +1,4 @@
-import { JSXElementConstructor, ComponentPropsWithoutRef } from 'react';
+import type { JSXElementConstructor, ComponentPropsWithoutRef } from 'react';
 
 /**
  * Argument type for {@link combineClasses}. Contains a list of classes to be aggregated into a string.
@@ -35,7 +35,7 @@ export type PolymorphicComponentProps<
  * Source: https://github.com/emotion-js/emotion/blob/master/packages/styled-base/types/helper.d.ts
  * A more precise version of just React.ComponentPropsWithoutRef on its own
  */
-export type PropsOf<C extends keyof JSX.IntrinsicElements | JSXElementConstructor<any>> =
+export type PropsOf<C extends keyof JSX.IntrinsicElements | JSXElementConstructor<unknown>> =
 	JSX.LibraryManagedAttributes<C, ComponentPropsWithoutRef<C>>;
 
 /**

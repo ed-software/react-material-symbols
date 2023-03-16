@@ -1,6 +1,7 @@
-import { ReactElement, ElementType, CSSProperties } from 'react';
-import { MaterialSymbolWeight, SymbolCodepoints } from './types';
-import { combineClasses, PolymorphicComponentProps } from './utils';
+import type { ElementType, CSSProperties, ReactElement } from 'react';
+import type { MaterialSymbolWeight, SymbolCodepoints } from './types';
+import { combineClasses } from './utils';
+import type { PolymorphicComponentProps } from './utils';
 
 export type MaterialSymbolProps = {
 	/** Required. The name of the icon to render. */
