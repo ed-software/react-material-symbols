@@ -2,7 +2,6 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 import react from '@vitejs/plugin-react';
 import dts from 'vite-plugin-dts';
-import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -11,11 +10,10 @@ export default defineConfig({
 			insertTypesEntry: true,
 		}),
 		react(),
-		cssInjectedByJsPlugin(),
 	],
 	build: {
 		lib: {
-			entry: resolve(__dirname, 'src/index.ts'),
+			entry: resolve(__dirname, 'src/index.tsx'),
 			name: 'React Material Symbols',
 			fileName: 'index',
 		},

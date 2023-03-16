@@ -1,6 +1,6 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import MaterialSymbol from '../outlined';
+import MaterialSymbol from '../index';
 import { SymbolCodepointsArray } from '../types';
 
 export default {
