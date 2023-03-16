@@ -12,13 +12,17 @@ jobs:
     # Operating System
     runs-on: ubuntu-latest
     # Job steps
+    env:
+      HAS_CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
     steps:
       - uses: actions/checkout@v1
       - name: Install dependencies
+        if: ${{ env.HAS_CHROMATIC_PROJECT_TOKEN }}
         # 👇 Install dependencies with the same package manager used in the project (replace it as needed), e.g. yarn, npm, pnpm
         run: yarn
         # 👇 Adds Chromatic as a step in the workflow
       - name: Publish to Chromatic
+        if: ${{ env.HAS_CHROMATIC_PROJECT_TOKEN }}
         uses: chromaui/action@v1
         # Chromatic GitHub Action options
         with:
