@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.1](https://github.com/ed-software/react-material-symbols/compare/v3.0.0...v3.0.1) (2023-03-17)
+
+
+### Bug Fixes
+
+* :bug: Fixed missing class on icon component due to css modules update ([4cc0022](https://github.com/ed-software/react-material-symbols/commit/4cc0022992c78f4bf63fd5427d88067de5d05786))
+
 ## [3.0.0](https://github.com/ed-software/react-material-symbols/compare/v2.0.4...v3.0.0) (2023-03-10)
 
 ### ⚠ BREAKING CHANGES
