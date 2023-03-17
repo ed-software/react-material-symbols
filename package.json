@@ -21,7 +21,8 @@
 		"prettier:check": "prettier --check .",
 		"prettier:write": "prettier --write .",
 		"eslint": "eslint .",
-		"eslint:fix": "eslint --fix ."
+		"eslint:fix": "eslint --fix .",
+		"test": "vitest run"
 	},
 	"dependencies": {
 		"react": "^18.2.0",
@@ -33,6 +34,8 @@
 		"@storybook/addon-essentials": "^6.5.13",
 		"@storybook/builder-vite": "^0.4.2",
 		"@storybook/react": "^6.5.13",
+		"@testing-library/jest-dom": "^5.16.5",
+		"@testing-library/react": "^14.0.0",
 		"@types/css-modules": "^1.0.2",
 		"@types/react": "^18.0.24",
 		"@types/react-dom": "^18.0.8",
@@ -44,11 +47,13 @@
 		"cross-env": "^7.0.3",
 		"eslint": "^8.36.0",
 		"eslint-plugin-react": "^7.32.2",
+		"jsdom": "^21.1.1",
 		"prettier": "^2.8.0",
 		"typescript": "^4.9.5",
 		"vite": "^4.1.4",
 		"vite-plugin-css-injected-by-js": "^3.0.1",
-		"vite-plugin-dts": "^2.1.0"
+		"vite-plugin-dts": "^2.1.0",
+		"vitest": "^0.29.3"
 	},
 	"description": "A minimalist package for adding Material Symbols to any React project.",
 	"repository": {
