@@ -27,3 +27,5 @@ dist-ssr
 *.sw?
 
 CHANGELOG.md
+package.json
+.github/workflows/prettier.yml
