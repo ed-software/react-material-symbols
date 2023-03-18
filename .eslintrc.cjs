@@ -1,5 +1,9 @@
 module.exports = {
-	extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended'],
+	extends: [
+		'eslint:recommended',
+		'plugin:@typescript-eslint/recommended',
+		'plugin:storybook/recommended',
+	],
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
 		ecmaVersion: 'latest',
@@ -11,7 +15,10 @@ module.exports = {
 		'@typescript-eslint/consistent-type-imports': 'warn',
 		'@typescript-eslint/no-unused-vars': [
 			'warn',
-			{ destructuredArrayIgnorePattern: '^_', ignoreRestSiblings: true },
+			{
+				destructuredArrayIgnorePattern: '^_',
+				ignoreRestSiblings: true,
+			},
 		],
 	},
 };

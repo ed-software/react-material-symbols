@@ -1,6 +1,6 @@
 import type { ElementType, CSSProperties, ReactElement } from 'react';
-import type { MaterialSymbolWeight, SymbolCodepoints } from './types';
-import type { PolymorphicComponentProps } from './utils';
+import type { MaterialSymbolWeight, PolymorphicComponentProps, SymbolCodepoints } from './types';
+import { combineClasses } from './utils';
 
 export type MaterialSymbolProps = {
 	/** Required. The name of the icon to render. */
@@ -30,7 +30,7 @@ export type PolymorphicMaterialSymbolProps<C extends React.ElementType> = Polymo
 	MaterialSymbolProps
 >;
 
-const MaterialSymbol = <C extends ElementType>({
+export const MaterialSymbol = <C extends ElementType>({
 	icon,
 	onClick,
 	as,
@@ -40,6 +40,7 @@ const MaterialSymbol = <C extends ElementType>({
 	size,
 	style: propStyle,
 	color,
+	className,
 	...props
 }: PolymorphicMaterialSymbolProps<C>): ReactElement => {
 	const Component = onClick !== undefined ? 'button' : (as as ElementType) ?? 'span';
@@ -65,10 +66,13 @@ const MaterialSymbol = <C extends ElementType>({
 	}
 
 	return (
-		<Component {...props} style={style} onClick={onClick}>
+		<Component
+			{...props}
+			style={style}
+			onClick={onClick}
+			className={combineClasses('material-symbols', className)}
+		>
 			{icon}
 		</Component>
 	);
 };
-
-export default MaterialSymbol;

@@ -1,6 +1,6 @@
 # React Material Symbols
 
-A minimalist package for adding [Material Symbols](https://fonts.google.com/icons?icon.set=Material+Symbols) to any React project.
+A simple package for adding [Material Symbols](https://fonts.google.com/icons?icon.set=Material+Symbols) to any React project.
 
 ## Authors
 
@@ -12,15 +12,6 @@ Install with npm
 
 ```bash
   npm i react-material-symbols
-```
-
-Import
-
-```typescript
-// Variant can be outlined, rounded or sharp.
-import Icon from 'react-material-symbols/[variant]';
-// If you need to access the type of the component props.
-import { type MaterialSymbolProps } from 'react-material-symbols';
 ```
 
 ## Props
@@ -40,11 +31,12 @@ import { type MaterialSymbolProps } from 'react-material-symbols';
 ## Examples
 
 ```TSX
-import Icon from 'react-material-symbols/rounded';
+import { MaterialSymbol } from 'react-material-symbols';
+import 'react-material-symbols/dist/rounded.css'; // Place in your root app directory.
 
 export default function App() {
   return (
-    <Icon icon="folder" size={24} fill grade={-25} color='red' />
+    <MaterialSymbol icon="folder" size={24} fill grade={-25} color='red' />
   )
 }
 

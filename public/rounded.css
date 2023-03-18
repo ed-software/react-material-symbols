@@ -3,9 +3,9 @@
 @font-face {
 	font-family: 'Material Symbols Rounded';
 	font-style: normal;
-	src: url(../font/material-symbols-rounded.woff2) format('woff2');
+	src: url('./material-symbols-rounded.woff2') format('woff2');
 }
 
-.rounded {
+.material-symbols {
 	font-family: 'Material Symbols Rounded';
 }
