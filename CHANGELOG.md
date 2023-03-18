@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.2](https://github.com/ed-software/react-material-symbols/compare/v3.0.1...v3.0.2) (2023-03-18)
+
+
+### Bug Fixes
+
+* :bug: add declaration map to tsconfig ([2da0f0d](https://github.com/ed-software/react-material-symbols/commit/2da0f0d938d62afeac0726b7de79a676ffd05bc8))
+
 ## [3.0.1](https://github.com/ed-software/react-material-symbols/compare/v3.0.0...v3.0.1) (2023-03-17)
 
 
