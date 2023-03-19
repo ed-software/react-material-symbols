@@ -1,5 +1,16 @@
 # Changelog
 
+## [4.0.0](https://github.com/ed-software/react-material-symbols/compare/v3.0.2...v4.0.0) (2023-03-19)
+
+
+### ⚠ BREAKING CHANGES
+
+* :sparkles: refactor library away from font and css injection to improve flexibility and performance
+
+### Features
+
+* :sparkles: refactor library away from font and css injection to improve flexibility and performance ([48c0166](https://github.com/ed-software/react-material-symbols/commit/48c016673f6c00622ef320f82bb002384a0d252a))
+
 ## [3.0.2](https://github.com/ed-software/react-material-symbols/compare/v3.0.1...v3.0.2) (2023-03-18)
 
 
