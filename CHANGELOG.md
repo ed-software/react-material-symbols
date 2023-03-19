@@ -1,5 +1,13 @@
 # Changelog
 
+## [4.0.1](https://github.com/ed-software/react-material-symbols/compare/v4.0.0...v4.0.1) (2023-03-19)
+
+
+### Bug Fixes
+
+* :bug: missing npm token from ci ([fe2ed31](https://github.com/ed-software/react-material-symbols/commit/fe2ed3110e2f9f0702b6a8f1f84f26152952d8af))
+* :memo: update docs ([e30b000](https://github.com/ed-software/react-material-symbols/commit/e30b000bd14a5f2e2dd9679515b7d93010a71753))
+
 ## [4.0.0](https://github.com/ed-software/react-material-symbols/compare/v3.0.2...v4.0.0) (2023-03-19)
 
 
