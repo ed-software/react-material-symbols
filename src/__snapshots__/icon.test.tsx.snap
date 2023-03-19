@@ -1,29 +1,9 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Icon > should render outlined 1`] = `
+exports[`Icon > should render icon 1`] = `
 <DocumentFragment>
   <span
-    class="_outlined_4d09f2 _material-symbols_4d09f2"
-  >
-    folder
-  </span>
-</DocumentFragment>
-`;
-
-exports[`Icon > should render rounded 1`] = `
-<DocumentFragment>
-  <span
-    class="_rounded_9ea5b3 _material-symbols_9ea5b3"
-  >
-    folder
-  </span>
-</DocumentFragment>
-`;
-
-exports[`Icon > should render sharp 1`] = `
-<DocumentFragment>
-  <span
-    class="_sharp_d99f38 _material-symbols_d99f38"
+    class="material-symbols"
   >
     folder
   </span>
@@ -33,7 +13,7 @@ exports[`Icon > should render sharp 1`] = `
 exports[`Icon > should render with props 1`] = `
 <DocumentFragment>
   <button
-    class="_sharp_d99f38 _material-symbols_d99f38"
+    class="material-symbols"
     style="color: red; font-variation-settings: \\"FILL\\" 1, \\"wght\\" 100, \\"GRAD\\" 4, \\"opsz\\" 32; font-size: 32px;"
   >
     folder
