@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.0.2](https://github.com/ed-software/react-material-symbols/compare/v4.0.1...v4.0.2) (2023-04-03)
+
+
+### Bug Fixes
+
+* :bug: icons should show nothing until the font is loaded ([69257b0](https://github.com/ed-software/react-material-symbols/commit/69257b009650b39281a895b0548e5ea3ba6944e7))
+
 ## [4.0.1](https://github.com/ed-software/react-material-symbols/compare/v4.0.0...v4.0.1) (2023-03-19)
 
 
