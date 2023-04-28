@@ -33,7 +33,7 @@ jobs:
       - name: Install dependencies
         if: ${{ env.HAS_CHROMATIC_PROJECT_TOKEN }}
         # 👇 Install dependencies with the same package manager used in the project (replace it as needed), e.g. yarn, npm, pnpm
-        run: yarn
+        run: npm ci
         # 👇 Adds Chromatic as a step in the workflow
       - name: Publish to Chromatic
         if: ${{ env.HAS_CHROMATIC_PROJECT_TOKEN }}

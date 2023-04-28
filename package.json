@@ -1,87 +1,87 @@
 {
-	"name": "react-material-symbols",
-	"private": false,
-	"version": "4.1.0",
-	"type": "module",
-	"types": "./dist/index.d.ts",
-	"main": "./dist/index.umd.cjs",
-	"module": "./dist/index.es.js",
-	"files": [
-		"dist/**/*"
-	],
-	"contributors": [
-		{
-			"name": "Ed Jones"
-		}
-	],
-	"engines": {
-		"node": ">=14.0.0"
-	},
-	"scripts": {
-		"dev": "vite",
-		"build": "tsc && vite build",
-		"preview": "vite preview",
-		"storybook": "cross-env NODE_OPTIONS='--openssl-legacy-provider' start-storybook -p 6006",
-		"build-storybook": "cross-env NODE_OPTIONS='--openssl-legacy-provider' build-storybook",
-		"chromatic": "chromatic --exit-zero-on-changes",
-		"prettier:check": "prettier --check .",
-		"prettier:write": "prettier --write .",
-		"eslint": "eslint .",
-		"eslint:fix": "eslint --fix .",
-		"test": "vitest run"
-	},
-	"dependencies": {
-		"react": "^18.2.0",
-		"react-dom": "^18.2.0"
-	},
-	"devDependencies": {
-		"@babel/core": "^7.21.3",
-		"@senojs/rollup-plugin-style-inject": "^0.2.0",
-		"@storybook/addon-essentials": "^6.5.13",
-		"@storybook/builder-vite": "^0.4.2",
-		"@storybook/core": "^6.5.16",
-		"@storybook/react": "6.5.13",
-		"@testing-library/jest-dom": "^5.16.5",
-		"@testing-library/react": "^14.0.0",
-		"@types/css-modules": "^1.0.2",
-		"@types/react": "^18.0.24",
-		"@types/react-dom": "^18.0.8",
-		"@typescript-eslint/eslint-plugin": "^5.55.0",
-		"@typescript-eslint/parser": "^5.55.0",
-		"@vitejs/plugin-react": "^3.1.0",
-		"babel-loader": "^9.1.2",
-		"chromatic": "^6.17.1",
-		"cross-env": "^7.0.3",
-		"eslint": "^8.36.0",
-		"eslint-plugin-react": "^7.32.2",
-		"eslint-plugin-storybook": "^0.6.11",
-		"jsdom": "^21.1.1",
-		"prettier": "^2.8.0",
-		"typescript": "^4.9.5",
-		"vite": "^4.1.4",
-		"vite-plugin-dts": "^2.1.0",
-		"vitest": "^0.29.3"
-	},
-	"description": "A simple package for adding Material Symbols to any React project.",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/ed-software/react-material-symbols.git"
-	},
-	"keywords": [
-		"Icons",
-		"React",
-		"TypeScript",
-		"Material Icons",
-		"Material Symbols",
-		"Symbols",
-		"Material"
-	],
-	"author": {
-		"name": "Ed Jones"
-	},
-	"license": "Apache-2.0",
-	"bugs": {
-		"url": "https://github.com/ed-software/react-material-symbols/issues"
-	},
-	"homepage": "https://github.com/ed-software/react-material-symbols#readme"
+  "name": "react-material-symbols",
+  "private": false,
+  "version": "4.1.0",
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.es.js",
+  "files": [
+    "dist/**/*"
+  ],
+  "contributors": [
+    {
+      "name": "Ed Jones"
+    }
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "storybook": "cross-env NODE_OPTIONS='--openssl-legacy-provider' start-storybook -p 6006",
+    "build-storybook": "cross-env NODE_OPTIONS='--openssl-legacy-provider' build-storybook",
+    "chromatic": "chromatic --exit-zero-on-changes",
+    "prettier:check": "prettier --check '**/*.{ts,tsx}'",
+    "prettier:write": "prettier --write '**/*.{ts,tsx}'",
+    "eslint": "eslint '**/*.{ts,tsx}'",
+    "eslint:fix": "eslint --fix '**/*.{ts,tsx}'",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.3",
+    "@senojs/rollup-plugin-style-inject": "^0.2.0",
+    "@storybook/addon-essentials": "^6.5.13",
+    "@storybook/builder-vite": "^0.4.2",
+    "@storybook/core": "^6.5.16",
+    "@storybook/react": "6.5.13",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@types/css-modules": "^1.0.2",
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "@typescript-eslint/parser": "^5.55.0",
+    "@vitejs/plugin-react": "^3.1.0",
+    "babel-loader": "^9.1.2",
+    "chromatic": "^6.17.1",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.36.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-storybook": "^0.6.11",
+    "jsdom": "^21.1.1",
+    "prettier": "^2.8.0",
+    "typescript": "^4.9.5",
+    "vite": "^4.1.4",
+    "vite-plugin-dts": "^2.1.0",
+    "vitest": "^0.29.3"
+  },
+  "description": "A simple package for adding Material Symbols to any React project.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ed-software/react-material-symbols.git"
+  },
+  "keywords": [
+    "Icons",
+    "React",
+    "TypeScript",
+    "Material Icons",
+    "Material Symbols",
+    "Symbols",
+    "Material"
+  ],
+  "author": {
+    "name": "Ed Jones"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ed-software/react-material-symbols/issues"
+  },
+  "homepage": "https://github.com/ed-software/react-material-symbols#readme"
 }

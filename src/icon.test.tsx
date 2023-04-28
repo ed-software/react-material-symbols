@@ -15,4 +15,10 @@ describe('Icon', () => {
 		);
 		expect(asFragment()).toMatchSnapshot();
 	});
+
+	it('should take a ref', () => {
+		const ref = { current: null };
+		render(<MaterialSymbol icon='folder' ref={ref} />);
+		expect(ref.current).not.toBe(null);
+	});
 });
