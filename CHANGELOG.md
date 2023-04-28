@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.1.1](https://github.com/ed-software/react-material-symbols/compare/v4.1.0...v4.1.1) (2023-04-28)
+
+
+### Bug Fixes
+
+* :construction_worker: update storybook ([a0b2fba](https://github.com/ed-software/react-material-symbols/commit/a0b2fba35b21f38e2d69c9b8444500771cf7e428))
+
 ## [4.1.0](https://github.com/ed-software/react-material-symbols/compare/v4.0.2...v4.1.0) (2023-04-28)
 
 
