@@ -1,4 +1,4 @@
-import type { ComponentStory, ComponentMeta } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react';
 import { SymbolCodepointsArray } from '../consts';
 
 import { MaterialSymbol } from '../index';
@@ -13,30 +13,31 @@ export default {
 		color: { control: 'color' },
 		fill: { control: 'boolean' },
 	},
-} as ComponentMeta<typeof MaterialSymbol>;
+} satisfies Meta<typeof MaterialSymbol>;
 
-const Template: ComponentStory<typeof MaterialSymbol> = (args) => <MaterialSymbol {...args} />;
-
-export const Example = Template.bind({});
-Example.args = {
-	icon: 'folder',
-	fill: false,
-	size: 48,
+export const Example: StoryObj = {
+	render: (args) => <MaterialSymbol {...args} />,
+	args: {
+		icon: 'folder',
+		fill: false,
+		size: 48,
+	},
 };
 
-const AllTemplate: ComponentStory<typeof MaterialSymbol> = (args) => (
-	<>
-		{SymbolCodepointsArray.map((symbolCodepoint) => (
-			<MaterialSymbol
-				{...args}
-				icon={symbolCodepoint}
-				key={symbolCodepoint}
-				title={symbolCodepoint}
-			/>
-		))}
-	</>
-);
-export const All = AllTemplate.bind({});
-All.args = {
-	size: 24,
+export const All: StoryObj = {
+	render: (args) => (
+		<>
+			{SymbolCodepointsArray.map((symbolCodepoint) => (
+				<MaterialSymbol
+					{...args}
+					icon={symbolCodepoint}
+					key={symbolCodepoint}
+					title={symbolCodepoint}
+				/>
+			))}
+		</>
+	),
+	args: {
+		size: 24,
+	},
 };

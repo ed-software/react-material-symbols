@@ -2,6 +2,10 @@ name: 'CI'
 
 on: push
 
+env:
+  NODE_VERSION: '18.12.1'
+
+
 jobs:
   tests:
     runs-on: ubuntu-latest
@@ -30,6 +34,11 @@ jobs:
       HAS_CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
     steps:
       - uses: actions/checkout@v1
+      - name: Setup Node ${{ env.NODE_VERSION }} Environment
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
       - name: Install dependencies
         if: ${{ env.HAS_CHROMATIC_PROJECT_TOKEN }}
         # 👇 Install dependencies with the same package manager used in the project (replace it as needed), e.g. yarn, npm, pnpm
@@ -37,7 +46,7 @@ jobs:
         # 👇 Adds Chromatic as a step in the workflow
       - name: Publish to Chromatic
         if: ${{ env.HAS_CHROMATIC_PROJECT_TOKEN }}
-        uses: chromaui/action@v1
+        uses: chromaui/action-next@v1
         # Chromatic GitHub Action options
         with:
           # 👇 Chromatic projectToken, refer to the manage page to obtain it.
