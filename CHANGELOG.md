@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.1.0](https://github.com/ed-software/react-material-symbols/compare/v4.0.2...v4.1.0) (2023-04-28)
+
+
+### Features
+
+* :sparkles: add ref support ([0b99f44](https://github.com/ed-software/react-material-symbols/commit/0b99f4447e7d1523c55a09db5fc5a637032499c8))
+
 ## [4.0.2](https://github.com/ed-software/react-material-symbols/compare/v4.0.1...v4.0.2) (2023-04-03)
 
 
