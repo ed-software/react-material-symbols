@@ -1,4 +1,5 @@
-import type { ElementType, CSSProperties, ReactElement } from 'react';
+import type { ElementType, CSSProperties, ReactElement, Ref } from 'react';
+import { forwardRef } from 'react';
 import type { MaterialSymbolWeight, PolymorphicComponentProps, SymbolCodepoints } from './types';
 import { combineClasses } from './utils';
 
@@ -30,49 +31,55 @@ export type PolymorphicMaterialSymbolProps<C extends React.ElementType> = Polymo
 	MaterialSymbolProps
 >;
 
-export const MaterialSymbol = <C extends ElementType>({
-	icon,
-	onClick,
-	as,
-	weight,
-	fill = false,
-	grade,
-	size,
-	style: propStyle,
-	color,
-	className,
-	...props
-}: PolymorphicMaterialSymbolProps<C>): ReactElement => {
-	const Component = onClick !== undefined ? 'button' : (as as ElementType) ?? 'span';
-	const style = { color, ...propStyle };
+export const MaterialSymbol = forwardRef(
+	<C extends ElementType>(
+		{
+			icon,
+			onClick,
+			as,
+			weight,
+			fill = false,
+			grade,
+			size,
+			style: propStyle,
+			color,
+			className,
+			...props
+		}: PolymorphicMaterialSymbolProps<C>,
+		ref: Ref<C>
+	): ReactElement => {
+		const Component = onClick !== undefined ? 'button' : (as as ElementType) ?? 'span';
+		const style = { color, ...propStyle };
 
-	if (fill)
-		style.fontVariationSettings = [style.fontVariationSettings, '"FILL" 1']
-			.filter(Boolean)
-			.join(', ');
-	if (weight)
-		style.fontVariationSettings = [style.fontVariationSettings, `"wght" ${weight}`]
-			.filter(Boolean)
-			.join(', ');
-	if (grade)
-		style.fontVariationSettings = [style.fontVariationSettings, `"GRAD" ${grade}`]
-			.filter(Boolean)
-			.join(', ');
-	if (size) {
-		style.fontVariationSettings = [style.fontVariationSettings, `"opsz" ${size}`]
-			.filter(Boolean)
-			.join(', ');
-		style.fontSize = size;
+		if (fill)
+			style.fontVariationSettings = [style.fontVariationSettings, '"FILL" 1']
+				.filter(Boolean)
+				.join(', ');
+		if (weight)
+			style.fontVariationSettings = [style.fontVariationSettings, `"wght" ${weight}`]
+				.filter(Boolean)
+				.join(', ');
+		if (grade)
+			style.fontVariationSettings = [style.fontVariationSettings, `"GRAD" ${grade}`]
+				.filter(Boolean)
+				.join(', ');
+		if (size) {
+			style.fontVariationSettings = [style.fontVariationSettings, `"opsz" ${size}`]
+				.filter(Boolean)
+				.join(', ');
+			style.fontSize = size;
+		}
+
+		return (
+			<Component
+				{...props}
+				ref={ref}
+				style={style}
+				onClick={onClick}
+				className={combineClasses('material-symbols', className)}
+			>
+				{icon}
+			</Component>
+		);
 	}
-
-	return (
-		<Component
-			{...props}
-			style={style}
-			onClick={onClick}
-			className={combineClasses('material-symbols', className)}
-		>
-			{icon}
-		</Component>
-	);
-};
+);
