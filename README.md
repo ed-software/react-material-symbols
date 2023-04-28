@@ -2,6 +2,8 @@
 
 A simple package for adding [Material Symbols](https://fonts.google.com/icons?icon.set=Material+Symbols) to any React project.
 
+![foo](/preview.png "icons preview")
+
 ## Authors
 
 - [@ed-software](https://www.github.com/ed-software)
