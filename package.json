@@ -22,7 +22,7 @@
     "build": "vite build && tsc --outDir dist --emitDeclarationOnly",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
+    "build-storybook": "storybook build --docs",
     "chromatic": "chromatic --exit-zero-on-changes",
     "prettier:check": "prettier --check '**/*.{ts,tsx}'",
     "prettier:write": "prettier --write '**/*.{ts,tsx}'",
