@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.2.2](https://github.com/ed-software/react-material-symbols/compare/v4.2.1...v4.2.2) (2023-10-18)
+
+
+### Bug Fixes
+
+* :bug: deploy ([b625468](https://github.com/ed-software/react-material-symbols/commit/b6254681299d63af99a3d4d0f450f6ec111d8781))
+
 ## [4.2.1](https://github.com/ed-software/react-material-symbols/compare/v4.2.0...v4.2.1) (2023-10-18)
 
 
