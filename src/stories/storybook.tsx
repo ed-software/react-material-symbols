@@ -15,7 +15,7 @@ export default {
 	},
 } satisfies Meta<typeof MaterialSymbol>;
 
-export const Example: StoryObj = {
+export const Example: StoryObj<typeof MaterialSymbol> = {
 	render: (args) => <MaterialSymbol {...args} />,
 	args: {
 		icon: 'folder',
