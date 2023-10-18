@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.2.1](https://github.com/ed-software/react-material-symbols/compare/v4.2.0...v4.2.1) (2023-10-18)
+
+
+### Bug Fixes
+
+* :bug: typechecking ([a1b0ddb](https://github.com/ed-software/react-material-symbols/commit/a1b0ddbf1c93a63c863e019cac54f7d538aadce4))
+
 ## [4.2.0](https://github.com/ed-software/react-material-symbols/compare/v4.1.3...v4.2.0) (2023-10-18)
 
 
