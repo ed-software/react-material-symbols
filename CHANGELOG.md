@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.1.3](https://github.com/ed-software/react-material-symbols/compare/v4.1.2...v4.1.3) (2023-10-18)
+
+
+### Bug Fixes
+
+* npm publish ([bfa52eb](https://github.com/ed-software/react-material-symbols/commit/bfa52eba574feac8ccff297490d55d7426053639))
+
 ## [4.1.2](https://github.com/ed-software/react-material-symbols/compare/v4.1.1...v4.1.2) (2023-10-18)
 
 
