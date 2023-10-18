@@ -82,4 +82,4 @@ export const MaterialSymbol = forwardRef(
 			</Component>
 		);
 	}
-);
+) as <C extends ElementType>(props: PolymorphicMaterialSymbolProps<C>) => ReactElement;
