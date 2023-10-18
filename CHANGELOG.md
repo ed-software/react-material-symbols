@@ -1,5 +1,17 @@
 # Changelog
 
+## [4.2.0](https://github.com/ed-software/react-material-symbols/compare/v4.1.3...v4.2.0) (2023-10-18)
+
+
+### Features
+
+* :sparkles: update icons ([9155044](https://github.com/ed-software/react-material-symbols/commit/915504498a130769af80cf4f9ec35b9e28e77893))
+
+
+### Bug Fixes
+
+* :bug: file extension mismatch ([af26a2a](https://github.com/ed-software/react-material-symbols/commit/af26a2abdc929580c2602924c567cc140a3a6e0c))
+
 ## [4.1.3](https://github.com/ed-software/react-material-symbols/compare/v4.1.2...v4.1.3) (2023-10-18)
 
 
