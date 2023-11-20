@@ -34,7 +34,7 @@ Install with npm
 
 ```TSX
 import { MaterialSymbol } from 'react-material-symbols';
-import 'react-material-symbols/dist/rounded.css'; // Place in your root app file. There are also `sharp.css` and `outlined.css` variants.
+import 'react-material-symbols/rounded'; // Place in your root app file. There are also `sharp` and `outlined` variants.
 
 export default function App() {
   return (
@@ -46,7 +46,7 @@ export default function App() {
 
 ## Demo
 
-https://react-material-symbols.vercel.app/?path=/docs/outlined--example
+<https://react-material-symbols.vercel.app/>
 
 ## License
 

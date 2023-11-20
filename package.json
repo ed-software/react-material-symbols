@@ -11,7 +11,10 @@
       "import": "./dist/index.es.js",
       "require": "./dist/index.umd.js",
       "types": "./dist/index.d.ts"
-    }
+    },
+    "./sharp": "./dist/sharp.css",
+    "./rounded": "./dist/rounded.css",
+    "./outlined": "./dist/outlined.css"
   },
   "files": [
     "dist/**/*"
