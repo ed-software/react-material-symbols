@@ -1,5 +1,17 @@
 # Changelog
 
+## [4.3.0](https://github.com/ed-software/react-material-symbols/compare/v4.2.2...v4.3.0) (2023-11-20)
+
+
+### Features
+
+* :bug: fix compatibility with next 13 ([9d5ebd2](https://github.com/ed-software/react-material-symbols/commit/9d5ebd2bf2ec5a6d45515f2c75f3fcfe272f0d0f))
+
+
+### Bug Fixes
+
+* update icons to November 2023 ([2ecc897](https://github.com/ed-software/react-material-symbols/commit/2ecc89777bd395f37e52a76ab1f8bcf71feb769d))
+
 ## [4.2.2](https://github.com/ed-software/react-material-symbols/compare/v4.2.1...v4.2.2) (2023-10-18)
 
 
