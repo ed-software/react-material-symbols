@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.3.1](https://github.com/ed-software/react-material-symbols/compare/v4.3.0...v4.3.1) (2023-11-20)
+
+
+### Bug Fixes
+
+* :bug: css imports ([c8b736f](https://github.com/ed-software/react-material-symbols/commit/c8b736fddab0259f7be4b1225174dc9b058ec3cf))
+
 ## [4.3.0](https://github.com/ed-software/react-material-symbols/compare/v4.2.2...v4.3.0) (2023-11-20)
 
 
