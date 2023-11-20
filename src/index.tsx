@@ -26,7 +26,7 @@ export type MaterialSymbolProps = {
 	style?: CSSProperties;
 };
 
-export type PolymorphicMaterialSymbolProps<C extends React.ElementType> = PolymorphicComponentProps<
+export type PolymorphicMaterialSymbolProps<C extends ElementType> = PolymorphicComponentProps<
 	C,
 	MaterialSymbolProps
 >;
