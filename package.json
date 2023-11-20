@@ -4,8 +4,15 @@
   "version": "4.2.2",
   "type": "module",
   "types": "./dist/index.d.ts",
-  "main": "./dist/index.umd.js",
   "module": "./dist/index.es.js",
+  "main": "./dist/index.umd.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "files": [
     "dist/**/*"
   ],
@@ -43,8 +50,8 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
     "@types/css-modules": "^1.0.2",
-    "@types/react": "^18.0.24",
-    "@types/react-dom": "^18.0.8",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
     "@typescript-eslint/eslint-plugin": "^5.55.0",
     "@typescript-eslint/parser": "^5.55.0",
     "@vitejs/plugin-react": "^3.1.0",
