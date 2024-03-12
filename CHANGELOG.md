@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.4.0](https://github.com/ed-software/react-material-symbols/compare/v4.3.1...v4.4.0) (2024-03-12)
+
+
+### Features
+
+* Expose MaterialSymbolWeight, SymbolCodepoints interfaces ([80a2416](https://github.com/ed-software/react-material-symbols/commit/80a24164860cdc7182d652aab66c570c45bee0ae))
+
 ## [4.3.1](https://github.com/ed-software/react-material-symbols/compare/v4.3.0...v4.3.1) (2023-11-20)
 
 
