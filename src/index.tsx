@@ -1,6 +1,7 @@
 import type { ElementType, CSSProperties, ReactElement, Ref } from 'react';
 import { forwardRef } from 'react';
 import type { MaterialSymbolWeight, PolymorphicComponentProps, SymbolCodepoints } from './types';
+export type { MaterialSymbolWeight, SymbolCodepoints } from './types';
 import { combineClasses } from './utils';
 
 export type MaterialSymbolProps = {
